@@ -1,0 +1,55 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  
+  background-color: #f7fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* bump the code size down a bit */
+pre[class*="language-"] {
+  font-size: 0.8em !important;
+}
+
+
+/*  Code Line Highlight Styles */ 
+/* highlight for each spotlight line */
+.remark-highlight-code-line {
+  background-color: #4e5867;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #c2e78e;
+}
+ 
+/* Gutter for line numbers when the line-numbers plugin is active */
+.remark-highlight pre[class*='language-'].line-numbers {
+  padding-left: 2.8em;
+}

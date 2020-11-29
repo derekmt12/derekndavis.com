@@ -11,7 +11,7 @@ export default function Home({ posts }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      {/* <SiteIntro /> */}
+      <SiteIntro />
 
       <BlogList posts={posts} />
     </Layout>
@@ -21,22 +21,14 @@ export default function Home({ posts }) {
 function SiteIntro() {
   return (
     <section style={{ maxWidth: '620px' }} className="mx-auto mt-3">
-      <div className="flex">
-        <img
-          src="/images/profile.png"
-          className="rounded-full"
-          style={{ width: '100px', height: '100px' }}
-          alt="Derek Davis"
-        />
-        <h1 className="text-3xl ml-3 self-center">Hi, I'm Derek.</h1>
-      </div>
-      <p className="mt-3 prose text-lg">
+      <h1 className="text-3xl">Hi, I'm Derek.</h1>
+      <p className="mt-3 prose text-lg text-gray-600">
         I'm a senior software engineer at UL in Franklin, TN. I love all things
         JavaScript and have been developing for the web since I graduated Middle
         Tennessee State University in 2012. I'm a life-long learner and enjoy
         teaching programming topics in general.
       </p>
-      <p className="mt-3 prose text-lg">
+      <p className="mt-3 prose text-lg text-gray-600">
         I'm a Christ follower, husband, and father. When I'm not working in VS
         Code, I'm likely making espresso or planning trips abroad.
       </p>

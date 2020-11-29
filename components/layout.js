@@ -1,6 +1,8 @@
 import Head from 'next/head';
-import styles from './layout.module.css';
 import Link from 'next/link';
+import classNames from 'classnames';
+
+import styles from './layout.module.css';
 
 const name = 'Derek Davis';
 export const siteTitle = 'Next.js Sample Website';
@@ -24,15 +26,17 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <main>
-        <header>
-          <div
-            className="bg-gray-300 inset-bottom-shadow"
-            style={{ height: home ? '100px' : '50px' }}
-          ></div>
+        <header
+          className={classNames(
+            'bg-gray-300 inset-bottom-shadow',
+            home ? 'mb-24' : 'mb-16'
+          )}
+          style={{ height: home ? '100px' : '50px' }}
+        >
           <section style={{ maxWidth: '620px' }} className="mx-auto">
             <div
               className="rounded-full p-2 bg-gray-300 inline-block relative inset-bottom-shadow"
-              style={{ top: home ? '-57px' : '-44px' }}
+              style={{ top: home ? '40px' : '5px' }}
             >
               <Link href="/">
                 <a>

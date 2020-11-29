@@ -1,7 +1,8 @@
 ---
 title: 'Calling AngularJS Services from React'
+series: 'Migration to React Series'
 seriesId: 'migration-to-react'
-sequence: 2
+sequence: 3
 date: '2020-01-01'
 tags: ['react', 'javascript']
 excerpt: 'First off, why would you want to call an AngularJS service from

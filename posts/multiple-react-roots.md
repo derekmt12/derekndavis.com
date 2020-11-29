@@ -1,7 +1,8 @@
 ---
 title: 'Multiple React Roots'
+series: 'Migration to React Series'
 seriesId: 'migration-to-react'
-sequence: 3
+sequence: 4
 date: '2020-01-01'
 tags: ['react', 'javascript']
 excerpt: 'One of the biggest challenges with incrementally migrating an app to React is how to manage multiple React “root” components. In a brand new React app...'

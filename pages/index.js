@@ -11,7 +11,8 @@ export default function Home({ posts }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <SiteIntro />
+      {/* <SiteIntro /> */}
+
       <BlogList posts={posts} />
     </Layout>
   );
@@ -46,7 +47,7 @@ function SiteIntro() {
 function BlogList({ posts }) {
   return (
     <section style={{ maxWidth: '620px' }} className="mx-auto">
-      <h2 className="text-2xl my-3">Blog</h2>
+      <h2 className="text-2xl my-3">Posts</h2>
       <ul>
         <li className="mb-5 rounded shadow-md p-3 bg-white">
           <h2 className="text-2xl">React Migration Series</h2>
@@ -72,7 +73,7 @@ function BlogList({ posts }) {
                   </div>
                   <p className="text-gray-600">{excerpt}</p>
                   {posts.length > index + 1 ? (
-                    <hr className="my-5 border-gray-200 border-2" />
+                    <hr className="my-5 border-gray-200" />
                   ) : null}
                 </div>
               </li>

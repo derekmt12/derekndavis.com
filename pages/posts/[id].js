@@ -11,23 +11,6 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <header style={{ maxWidth: '620px' }} className="mx-auto">
-        <Link href="/">
-          <a className="hover:no-underline">
-            <div className="py-3 inline-flex">
-              <img
-                src="/images/profile.png"
-                className="rounded-full"
-                style={{ width: '50px', height: '50px' }}
-                alt="Derek Davis"
-              />
-              <span className="self-center ml-3 text-black">
-                Derek N. Davis
-              </span>
-            </div>
-          </a>
-        </Link>
-      </header>
       <article
         style={{ maxWidth: '620px' }}
         className="mx-auto prose-sm p-5 sm:p-0 sm:prose"
@@ -54,7 +37,7 @@ export default function Post({ postData }) {
           <div className="text-gray-600 mb-2">
             <Date dateString={postData.date} />
           </div>
-          <div className="mb-5">
+          {/* <div className="mb-5">
             {postData.tags &&
               postData.tags.map((tag) => (
                 <span
@@ -64,7 +47,7 @@ export default function Post({ postData }) {
                   {tag}
                 </span>
               ))}
-          </div>
+          </div> */}
         </header>
         <section dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>

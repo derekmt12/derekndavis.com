@@ -23,7 +23,35 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main>{children}</main>
+      <main>
+        <header>
+          <div
+            className="bg-gray-300 inset-bottom-shadow"
+            style={{ height: home ? '100px' : '50px' }}
+          ></div>
+          <section style={{ maxWidth: '620px' }} className="mx-auto">
+            <div
+              className="rounded-full p-2 bg-gray-300 inline-block relative inset-bottom-shadow"
+              style={{ top: home ? '-57px' : '-44px' }}
+            >
+              <Link href="/">
+                <a>
+                  <img
+                    src="/images/profile.png"
+                    className="rounded-full"
+                    style={{
+                      width: home ? '100px' : '70px',
+                      height: home ? '100px' : '70px',
+                    }}
+                    alt="Derek Davis"
+                  />
+                </a>
+              </Link>
+            </div>
+          </section>
+        </header>
+        {children}
+      </main>
       {/* {!home && (
         <div className={styles.backToHome}>
           <Link href="/">

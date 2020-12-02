@@ -5,7 +5,10 @@ seriesId: 'migration-to-react'
 sequence: 4
 date: '2020-01-01'
 tags: ['react', 'javascript']
-excerpt: 'One of the biggest challenges with incrementally migrating an app to React is how to manage multiple React “root” components. In a brand new React app...'
+excerpt:
+  'One of the biggest challenges with incrementally migrating an app
+  to React is how to manage multiple React “root” components. In a
+  brand new React app...'
 ---
 
 One of the biggest challenges with incrementally migrating an app to

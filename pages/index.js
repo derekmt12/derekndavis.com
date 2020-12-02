@@ -12,7 +12,6 @@ export default function Home({ posts }) {
         <title>{siteTitle}</title>
       </Head>
       <SiteIntro />
-
       <BlogList posts={posts} />
     </Layout>
   );

@@ -5,7 +5,6 @@ import classNames from 'classnames';
 import Layout, { siteTitle } from '../components/layout';
 import Date from '../components/date';
 import { getSortedPostsData } from '../lib/posts';
-import styles from './Home.module.css';
 
 export default function Home({ posts }) {
   return (
@@ -43,31 +42,25 @@ function BlogList({ posts }) {
   return (
     <section>
       <div className="mx-auto max-width px-4 sm:px-0">
-        <h2 className="text-xl sm:text-2xl my-3">Posts</h2>
+        <h2 className="text-xl uppercase font-bold my-3">Posts</h2>
+        <hr className="mb-8" />
+        <h3 className="text-xl sm:text-2xl">React Migration Series</h3>
+        <p className="text-gray-500 mb-5 sm:text-lg">
+          Convert your AngularJS app to React
+        </p>
         <ul>
-          <li className="mb-5 rounded shadow-md p-3 bg-white">
-            <h2 className="text-xl sm:text-2xl">React Migration Series</h2>
-            <p className="text-gray-500 mb-5 sm:text-lg">
-              Convert your AngularJS app to React
-            </p>
-            <ul>
-              {posts.map(({ id, date, title, excerpt }, index) => (
-                <li key={id}>
-                  <Link href={`/posts/${id}`}>
-                    <a className="sm:text-lg">{title}</a>
-                  </Link>
-                  <br />
-                  <div className="text-sm text-gray-500">
-                    <Date dateString={date} />
-                  </div>
-                  <p className="text-gray-600">{excerpt}</p>
-                  {posts.length > index + 1 ? (
-                    <hr className="my-5 border-gray-200" />
-                  ) : null}
-                </li>
-              ))}
-            </ul>
-          </li>
+          {posts.map(({ id, date, title, excerpt }, index) => (
+            <li key={id} className="mb-5 rounded shadow-md p-3 bg-white">
+              <Link href={`/posts/${id}`}>
+                <a className="sm:text-lg">{title}</a>
+              </Link>
+              <br />
+              <div className="text-sm text-gray-500">
+                <Date dateString={date} />
+              </div>
+              <p className="text-gray-600">{excerpt}</p>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

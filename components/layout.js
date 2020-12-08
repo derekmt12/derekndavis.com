@@ -2,8 +2,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import classNames from 'classnames';
 
-import styles from './layout.module.css';
-
 const name = 'Derek Davis';
 export const siteTitle = 'Next.js Sample Website';
 
@@ -11,7 +9,18 @@ export default function Layout({ children, home }) {
   return (
     <div>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="favicon-32x32.png"
+        />
+        <link rel="manifest" href="site.webmanifest" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -25,18 +34,31 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main>
-        <header
-          className={classNames(
-            'bg-gray-300 inset-bottom-shadow',
-            home ? 'mb-24' : 'mb-16'
-          )}
-          style={{ height: home ? '100px' : '50px' }}
+
+      <header
+        className={classNames(
+          'bg-gray-800 inset-bottom-shadow',
+          !home ? 'mb-16' : null
+        )}
+        style={{
+          height: home ? '100px' : '50px',
+          background:
+            "url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80')",
+        }}
+      >
+        <div
+          style={{
+            backgroundColor: 'rgb(237 241 253 / 70%)',
+            height: home ? '100px' : '50px',
+          }}
         >
-          <section style={{ maxWidth: '620px' }} className="mx-auto">
+          <section className="mx-auto max-width px-4 sm:px-0">
             <div
-              className="rounded-full p-2 bg-gray-300 inline-block relative inset-bottom-shadow"
-              style={{ top: home ? '40px' : '5px' }}
+              className="rounded-full p-2 inline-block relative inset-bottom-shadow"
+              style={{
+                top: home ? '40px' : '5px',
+                backgroundColor: 'rgb(178 180 189)',
+              }}
             >
               <Link href="/">
                 <a>
@@ -53,16 +75,19 @@ export default function Layout({ children, home }) {
               </Link>
             </div>
           </section>
-        </header>
-        {children}
-      </main>
-      {/* {!home && (
-        <div className={styles.backToHome}>
+        </div>
+      </header>
+      <main>{children}</main>
+      {!home && (
+        <div className="max-width mx-auto my-12">
           <Link href="/">
             <a>← Back to home</a>
           </Link>
         </div>
-      )} */}
+      )}
+      <footer style={{ height: '200px' }} className="bg-gray-300 p-5">
+        <div className="max-width mx-auto">email: derekmt12@gmail.com</div>
+      </footer>
     </div>
   );
 }

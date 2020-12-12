@@ -2,25 +2,25 @@ import Head from 'next/head';
 import Link from 'next/link';
 import classNames from 'classnames';
 
-const name = 'Derek Davis';
-export const siteTitle = 'Next.js Sample Website';
-
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, title }) {
+  const defaultTitle = 'Derek N. Davis';
+  const siteTitle = title ? `${title} - ${defaultTitle}` : defaultTitle;
   return (
     <div>
       <Head>
+        <title>{siteTitle}</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="apple-touch-icon.png"
+          href="/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="favicon-32x32.png"
+          href="/favicon-32x32.png"
         />
-        <link rel="manifest" href="site.webmanifest" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -74,12 +74,15 @@ export default function Layout({ children, home }) {
                 </a>
               </Link>
             </div>
+            <div className="float-right">
+              <a href="https://www.linkedin.com/in/derekmt12">LinkedIn</a>
+            </div>
           </section>
         </div>
       </header>
       <main>{children}</main>
       {!home && (
-        <div className="max-width mx-auto my-12">
+        <div className="max-width mx-auto my-12 px-4 sm:px-0">
           <Link href="/">
             <a>← Back to home</a>
           </Link>

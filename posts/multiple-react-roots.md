@@ -1,6 +1,7 @@
 ---
 title: 'Multiple React Roots'
 series: 'Migration to React Series'
+seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 4
 date: '2020-01-01'

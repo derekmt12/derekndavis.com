@@ -1,16 +1,10 @@
-import Head from 'next/head';
-import Link from 'next/link';
-
 import Layout from '../../components/layout';
 import Date from '../../components/date';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
 export default function Post({ postData }) {
   return (
-    <Layout>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
+    <Layout title={postData.title}>
       <article
         style={{ maxWidth: '620px' }}
         className="mx-auto prose-sm p-5 sm:p-0 sm:prose"

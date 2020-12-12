@@ -1,6 +1,7 @@
 ---
 title: 'Rendering React in AngularJS'
 series: 'Migration to React Series'
+seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 2
 date: '2020-01-01'

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://derekndavis.com</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://derekndavis.com/posts/calling-angularjs-services-from-react</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://derekndavis.com/posts/example-article</loc>
+  </url>
+
+  <url>
+    <loc>https://derekndavis.com/posts/migration-to-react-introduction</loc>
+  </url>
+
+  <url>
+    <loc>https://derekndavis.com/posts/multiple-react-roots</loc>
+  </url>
+
+  <url>
+    <loc>https://derekndavis.com/posts/rendering-react-in-angularjs</loc>
+  </url>
+</urlset>

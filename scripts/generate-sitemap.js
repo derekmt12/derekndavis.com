@@ -20,7 +20,6 @@ const packageJson = require('../package.json');
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             ${pages
               .map((page) => {
-                console.log(page);
                 const path = page
                   .replace('pages', '')
                   .replace('.js', '')

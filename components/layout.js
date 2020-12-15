@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import classNames from 'classnames';
+import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Layout({ children, home, title }) {
   const defaultTitle = 'Derek N. Davis';
@@ -52,7 +54,7 @@ export default function Layout({ children, home, title }) {
             height: home ? '100px' : '50px',
           }}
         >
-          <section className="mx-auto max-width px-4 sm:px-0">
+          <section className="mx-auto max-width px-4 sm:px-0 relative">
             <div
               className="rounded-full p-2 inline-block relative inset-bottom-shadow"
               style={{
@@ -74,8 +76,24 @@ export default function Layout({ children, home, title }) {
                 </a>
               </Link>
             </div>
-            <div className="float-right">
-              <a href="https://www.linkedin.com/in/derekmt12">LinkedIn</a>
+            <div
+              className="absolute right-0 pr-2 sm:p-0"
+              style={{ bottom: home ? '30px' : '52px' }}
+            >
+              <a href="https://www.twitter.com/derekmt12">
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  className="inline-block text-gray-100 mr-3"
+                  style={{ width: '32px', height: '32px' }}
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/derekmt12">
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="inline-block text-gray-100"
+                  style={{ width: '32px', height: '32px' }}
+                />
+              </a>
             </div>
           </section>
         </div>
@@ -88,9 +106,6 @@ export default function Layout({ children, home, title }) {
           </Link>
         </div>
       )}
-      <footer style={{ height: '200px' }} className="bg-gray-300 p-5">
-        <div className="max-width mx-auto">email: derekmt12@gmail.com</div>
-      </footer>
     </div>
   );
 }

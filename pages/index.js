@@ -18,12 +18,12 @@ function SiteIntro() {
     <section>
       <div className="mx-auto max-width px-4 sm:px-0 pt-24 pb-8">
         <h1 className="text-2xl sm:text-4xl font-extrabold">Hi, I'm Derek.</h1>
-        <p className="mt-3 prose-sm sm:prose text-lg text-gray-600">
+        <p className="mt-3 sm:text-lg text-gray-600">
           I'm a senior software engineer at UL in Franklin, TN. I love all
           things JavaScript and have been developing for the web since 2012. I'm
           a lifelong learner and enjoy teaching programming topics in general.
         </p>
-        <p className="mt-3 prose-sm sm:prose text-lg text-gray-600">
+        <p className="mt-3 sm:text-lg text-gray-600">
           I'm a Christ follower, husband, and father. When I'm not working in VS
           Code, I'm likely making espresso or planning trips abroad.
         </p>

@@ -1,12 +1,25 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import classNames from 'classnames';
 import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function Layout({ children, home, title }) {
+const SITE_URL = 'https://www.derekndavis.com';
+
+export default function Layout({
+  children,
+  home,
+  title,
+  description,
+  image = null,
+  postDate = null,
+  type: layoutType = 'website',
+  urlPath = null,
+}) {
   const defaultTitle = 'Derek N. Davis';
   const siteTitle = title ? `${title} - ${defaultTitle}` : defaultTitle;
+  const imageUrl = `${SITE_URL}/images/${image}`;
   return (
     <div>
       <Head>
@@ -23,18 +36,25 @@ export default function Layout({ children, home, title }) {
           href="/favicon-32x32.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
+
+        <meta name="description" content={description} />
+        <meta name="keywords" content="" />
+        {postDate && (
+          <meta property="article:published_time" content={postDate} />
+        )}
+
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@derekmt12" />
+        <meta name="twitter:title" content={title || defaultTitle} />
+        <meta name="twitter:description" content={description} />
+        {image && <meta name="twitter:image" content={imageUrl} />}
+
+        <meta property="og:title" content={title || defaultTitle} />
+        <meta property="og:url" content={`${SITE_URL}${urlPath || ''}`} />
+        <meta property="og:type" content={layoutType} />
+        <meta property="og:site_name" content={title || defaultTitle} />
+        <meta property="og:description" content={description} />
+        {image && <meta property="og:image" content={imageUrl} />}
       </Head>
 
       <header
@@ -42,17 +62,27 @@ export default function Layout({ children, home, title }) {
           'bg-gray-800 inset-bottom-shadow',
           !home ? 'mb-16' : null
         )}
-        style={{
-          height: home ? '100px' : '50px',
-          background:
-            "url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80')",
-        }}
+        style={{ height: home ? '100px' : '50px' }}
       >
+        <div
+          style={{ height: home ? '100px' : '50px' }}
+          className="absolute w-full overflow-hidden"
+        >
+          <Image
+            src="/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
+            alt="Photo by Florian Olivo on Unsplash"
+            layout="responsive"
+            width={1650}
+            height={1650 / (2400 / 1600)}
+            priority
+          />
+        </div>
         <div
           style={{
             backgroundColor: 'rgb(237 241 253 / 70%)',
             height: home ? '100px' : '50px',
           }}
+          className="absolute w-full"
         >
           <section className="mx-auto max-width px-4 sm:px-0 relative">
             <div
@@ -80,14 +110,14 @@ export default function Layout({ children, home, title }) {
               className="absolute right-0 pr-2 sm:p-0"
               style={{ bottom: home ? '30px' : '52px' }}
             >
-              <a href="https://www.twitter.com/derekmt12">
+              <a href="https://www.twitter.com/derekmt12" target="_blank">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   className="inline-block text-gray-100 mr-3"
                   style={{ width: '32px', height: '32px' }}
                 />
               </a>
-              <a href="https://www.linkedin.com/in/derekmt12">
+              <a href="https://www.linkedin.com/in/derekmt12" target="_blank">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   className="inline-block text-gray-100"

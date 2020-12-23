@@ -1,13 +1,22 @@
 ---
 title: 'Calling AngularJS Services from React'
-series: 'Migration to React Series'
+subtitle: 'How to let AngularJS own the global services in a hybrid AngularJS React app'
+seriesName: 'Migration to React Series'
 seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 3
 date: '2020-01-01'
 tags: ['react', 'javascript']
-excerpt: 'First off, why would you want to call an AngularJS service from
-React? It is likely there are global services...'
+
+image: 'antoine-barres-jay5BqVyf5A-unsplash.jpg'
+imageAltText: 'payphone in a red booth'
+imageWidth: 2400
+imageHeight: 1350
+photographer: 'Antoine Barrès'
+photographerLink: 'https://unsplash.com/@antoinebarres?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+unsplashLink: 'https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+
+urlPath: '/posts/calling-angularjs-services-from-react'
 ---
 
 First off, why would you want to call an AngularJS service from

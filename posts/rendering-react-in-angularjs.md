@@ -1,15 +1,22 @@
 ---
 title: 'Rendering React in AngularJS'
-series: 'Migration to React Series'
+subtitle: 'Using react2angular to convert your first AngularJS component to React'
+seriesName: 'Migration to React Series'
 seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 2
 date: '2020-01-01'
 tags: ['react', 'javascript']
-excerpt:
-  'When migrating an AngularJS app to React we need a way to use
-  React components in an AngularJS template. That’s where
-  `react2angular` comes in...'
+
+image: 'fred-moon-fk50kc-DzSg-unsplash.jpg'
+imageAltText: 'The Shard in London rising above the skyline'
+imageWidth: 2400
+imageHeight: 1350
+photographer: 'Fred Moon'
+photographerLink: 'https://unsplash.com/@fwed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+unsplashLink: 'https://unsplash.com/s/photos/london-skyline?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+
+urlPath: '/posts/rendering-react-in-angularjs'
 ---
 
 When migrating an AngularJS app to React we need a way to use React

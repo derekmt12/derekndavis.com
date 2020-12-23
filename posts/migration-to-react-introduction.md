@@ -1,17 +1,22 @@
 ---
-title: 'Introduction'
-series: 'Migration to React Series'
+title: 'Migration to React - Introduction'
+subtitle: 'How to incrementally convert your AngularJS app to React'
+seriesName: 'Migration to React Series'
 seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 1
 date: '2020-01-01'
+
+image: 'arnold-francisca-nPhl2x4fk2s-unsplash (1).jpg'
+imageAltText: 'laptop computer with code'
+imageWidth: 2400
+imageHeight: 1600
+photographer: 'Arnold Francisca'
+photographerLink: 'https://unsplash.com/@clark_fransa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+unsplashLink: 'https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+
 tags: ['react', 'javascript']
-excerpt:
-  "With a date set for the end of AngularJS long-term support, it's
-  been a wake up call for a lot companies still maintaining an
-  AngularJS app. My team and I have been working on converting our
-  large AngularJS app to React, and we've learned a ton along the
-  way..."
+urlPath: '/posts/migration-to-react-introduction'
 ---
 
 With a date set for the

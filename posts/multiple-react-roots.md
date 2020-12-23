@@ -1,15 +1,22 @@
 ---
 title: 'Multiple React Roots'
-series: 'Migration to React Series'
+subtitle: 'Managing multiple React root components in an incremental migration'
+seriesName: 'Migration to React Series'
 seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 4
 date: '2020-01-01'
 tags: ['react', 'javascript']
-excerpt:
-  'One of the biggest challenges with incrementally migrating an app
-  to React is how to manage multiple React “root” components. In a
-  brand new React app...'
+
+image: 'zach-reiner-hW11fwjzVfA-unsplash.jpg'
+imageAltText: 'tree roots in front of a waterfall'
+imageWidth: 2400
+imageHeight: 1600
+photographer: 'Zach Reiner'
+photographerLink: 'https://unsplash.com/@_zachreiner_?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+unsplashLink: 'https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+
+urlPath: '/posts/multiple-react-roots'
 ---
 
 One of the biggest challenges with incrementally migrating an app to

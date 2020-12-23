@@ -2,8 +2,6 @@
 title: 'Example Article'
 date: '2020-01-01'
 tags: ['react', 'javascript']
-excerpt: 'First off, why would you want to call an AngularJS service from
-React? It is likely there are global services...'
 ---
 
 First off, why would you want to call an AngularJS service from

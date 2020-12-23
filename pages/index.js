@@ -110,15 +110,15 @@ function Post({
           <div className="sm:flex">
             {image && (
               <div
-                className="sm:flex-none"
-                style={{ width: '200px', height: '150px' }}
+                className="sm:flex-none sm:w-1/4"
+                //style={{ width: '200px', height: '150px' }}
               >
                 <Image
                   src={`/images/${image}`}
                   alt={imageAltText}
-                  width={200}
-                  height={150}
-                  className="rounded-t sm:rounded-l bg-cover bg-center object-cover"
+                  width={400}
+                  height={300}
+                  className="rounded-tl rounded-tr sm:rounded-bl sm:rounded-tr-none bg-cover bg-center object-cover"
                 />
               </div>
             )}

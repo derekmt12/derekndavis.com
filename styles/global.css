@@ -26,14 +26,9 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 /* bump the code size down a bit */
 pre[class*="language-"] {
-  font-size: 0.8em !important;
+  font-size: 0.9em !important;
 }
 
 .inset-bottom-shadow {
@@ -59,4 +54,22 @@ pre[class*="language-"] {
 /* Gutter for line numbers when the line-numbers plugin is active */
 .remark-highlight pre[class*='language-'].line-numbers {
   padding-left: 2.8em;
+}
+
+/* Tailwind Overrides */
+.prose-sm h1,
+.prose-sm h2,
+.prose-sm h3,
+.prose-sm h4,
+.sm\:prose-lg h1,
+.sm\:prose-lg h2,
+.sm\:prose-lg h3,
+.sm\:prose-lg h4 {
+  color: black;
+}
+
+.prose-sm ul,
+.sm\:prose-lg ul {
+  list-style: disc;
+  list-style-position: inside;
 }

@@ -2,6 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 import { GA_TRACKING_ID } from '../lib/gtag';
 
+// https://github.com/vercel/next.js/blob/canary/examples/with-google-analytics/pages/_document.js
 export default class MyDocument extends Document {
   render() {
     return (

@@ -93,26 +93,14 @@ function Posts({ posts }) {
   );
 }
 
-function Post({
-  id,
-  date,
-  title,
-  subtitle,
-  image,
-  imageAltText,
-  imageWidth,
-  imageHeight,
-}) {
+function Post({ id, date, title, subtitle, image, imageAltText }) {
   return (
     <li className="mb-5 rounded shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1">
       <Link href={`/posts/${id}`}>
         <a className="hover:no-underline">
           <div className="sm:flex">
             {image && (
-              <div
-                className="sm:flex-none sm:w-1/4"
-                //style={{ width: '200px', height: '150px' }}
-              >
+              <div className="post-image-container text-center sm:flex-none sm:w-1/4">
                 <Image
                   src={`/images/${image}`}
                   alt={imageAltText}

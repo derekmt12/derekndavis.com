@@ -38,7 +38,6 @@ export default function Layout({
         <link rel="manifest" href="/site.webmanifest" />
 
         <meta name="description" content={description} />
-        <meta name="keywords" content="" />
         {postDate && (
           <meta property="article:published_time" content={postDate} />
         )}

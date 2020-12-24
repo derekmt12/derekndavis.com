@@ -7,7 +7,7 @@ import { getSortedPostsData } from '../lib/posts';
 
 export default function Home({ posts }) {
   return (
-    <Layout home>
+    <Layout home description="Software Engineer in Nashville, TN">
       <SiteIntro />
       <BlogList posts={posts} />
     </Layout>

@@ -7,7 +7,7 @@ seriesName: 'Migration to React Series'
 seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 4
-date: '2020-01-01'
+date: '2020-12-24'
 
 image: 'zach-reiner-hW11fwjzVfA-unsplash.jpg'
 imageAltText: 'tree roots in front of a waterfall'

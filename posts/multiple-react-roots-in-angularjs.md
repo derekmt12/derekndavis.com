@@ -1,12 +1,13 @@
 ---
-title: 'Multiple React Roots'
-subtitle: 'Managing multiple React root components in an incremental migration'
+title: 'Multiple React Roots in AngularJS'
+subtitle:
+  'Managing multiple React root components in an incremental
+  migration'
 seriesName: 'Migration to React Series'
 seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 4
 date: '2020-01-01'
-tags: ['react', 'javascript']
 
 image: 'zach-reiner-hW11fwjzVfA-unsplash.jpg'
 imageAltText: 'tree roots in front of a waterfall'
@@ -16,7 +17,7 @@ photographer: 'Zach Reiner'
 photographerLink: 'https://unsplash.com/@_zachreiner_?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
 unsplashLink: 'https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
 
-urlPath: '/posts/multiple-react-roots'
+urlPath: '/posts/multiple-react-roots-in-angularjs'
 ---
 
 One of the biggest challenges with incrementally migrating an app to
@@ -217,21 +218,59 @@ $stateProvider.state({
 ## Shared State Between Root Components
 
 An important thing to note about having multiple root components is
-that global state cannot be held inside React. Global state needs to
-be in defined in the Angular code (but it can still be plain
-JavaScript) so it can be part of the `reactRoot` service and passed
-to each React root component.
+that global state cannot be held inside React. It could be in the
+Angular code or just in a plain function. This is so it can be part
+of the `reactRoot` service, which is passed to each React root
+component.
 
 In the above example, the cache service was created in the
-`appModule.js` file and added to `reactRoot`. If it the
-`GlobalCacheProvider` component had no props passed to it, that
-means each React root would have its own cache. That might be okay
-in some cases, but for all React roots to share the same cache,
-there needs to be only one instance of it.
+`appModule.js` file and added to `reactRoot`.
+
+```javascript{6,12}
+// appModule.js
+
+import userModule from './userModule';
+import { createCache } from '...';
+
+const cacheService = createCache();
+
+angular
+  .module('app', [userModule.name])
+  .factory('reactRoot', (notifier) => {
+    return {
+      cacheService,
+      notifier,
+    };
+  });
+```
+
+Then in `buildReactRoot`, we passed the `cacheService` to the
+`GlobalCacheProvider`, which gives each React root access to the
+shared service.
+
+```javascript{7}
+export default function buildReactRoot(
+  WrappedComponent,
+  propNames = []
+) {
+  return react2Angular(
+    ({ reactRoot, ...props }) => (
+      <GlobalCacheProvider cacheService={reactRoot.cacheService}>
+        <NotifierProvider notifier={reactRoot.notifier}>
+          <WrappedComponent {...props} />
+        </NotifierProvider>
+      </GlobalCacheProvider>
+    ),
+    propNames,
+    ['reactRoot']
+  );
+}
+```
 
 ## In Summary
 
 - An incremental migration to React requires an easy way to wrap new
-  React root components in global providers
+  React root components in global providers.
 - A single AngularJS service of all global state and services helps
-  facilitate defining new React root components
+  facilitate defining new React root components.
+- All global state needs to be held outside of React.

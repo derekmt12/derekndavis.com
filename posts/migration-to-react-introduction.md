@@ -15,7 +15,6 @@ photographer: 'Arnold Francisca'
 photographerLink: 'https://unsplash.com/@clark_fransa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
 unsplashLink: 'https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
 
-tags: ['react', 'javascript']
 urlPath: '/posts/migration-to-react-introduction'
 ---
 
@@ -58,12 +57,12 @@ To start out, take inventory on the screens in your app. Find simple
 forms, screens with very little logic, or just areas that display
 information. These are the best candidates for converting to React.
 
-Our first conversion was the change password screen. It included
+Our first conversion was our change password screen. It included
 just a few inputs and some basic validation, and it wasn't a heavily
-trafficked area of our application.  Converting a highly used piece
+trafficked area of our application.  Converting a highly-used piece
 of functionality introduces more risk, so it's better to start out
-with the features off the beaten path. Save the most-used features
-for when the migration is proven out more.
+with the features off the beaten path. Save the others for when your
+team has had some success.
 
 ### Principles to Keep in Mind
 
@@ -80,7 +79,7 @@ While I'm sure _it's possible_ to make React input controls work
 inside the AngularJS form framework, the question is _should we?_
 Having such granularity of control is going to make it difficult to
 know what should be converted in particular situations, which leads
-to the next point.
+to my next point.
 
 **Integration code is throw-away code, so the less we have to write,
 the better.**  
@@ -128,7 +127,7 @@ Then the second route is converted.
 ![An AngularJS app with two sub-routes rendering React components](/images/angularToReactRouting3.png)
 
 And now the route definitions for `/details` and `/permissions` can
-be moved into a new React component that handles all routes under
+be moved into a single React component that handles all routes under
 `/users/{id}`.
 
 ![An AngularJS app with a top-level route rending a React component](/images/angularToReactRouting4.png)
@@ -149,12 +148,12 @@ React code will go. If your app is all in a single repository, then
 it makes sense to just have the React code alongside the AngularJS
 code. However, if your app has modules with their own repositories,
 you might opt to create a new repository (or repositories) with your
-new React setup.
+React setup.
 
 ### Supporting JSX
 
 To be able to handle JSX and all the JavaScript features typically
-used with a React app, I recommend the babel-preset-react-app
+used with a React app, I recommend the `babel-preset-react-app`
 package. It's what Create React App uses, so it's the easiest way to
 get all the syntax support you need for React development.
 
@@ -185,4 +184,11 @@ suffix.
 
 ## In Summary
 
--
+- When it comes to large apps, an incremental migration to React is
+  the way to go.
+- Keep things simple by converting the easy components first.
+- Use `babel-preset-react-app` to configure your codebase for React
+  development.
+- Keep your React code in a separate repository or use file suffixes
+  to help your React and Angular test runners target the appropriate
+  tests.

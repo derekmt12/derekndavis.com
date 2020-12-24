@@ -1,12 +1,13 @@
 ---
 title: 'Calling AngularJS Services from React'
-subtitle: 'How to let AngularJS own the global services in a hybrid AngularJS React app'
+subtitle:
+  'How to let AngularJS own the global services in a hybrid
+  AngularJS React app'
 seriesName: 'Migration to React Series'
 seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 3
 date: '2020-01-01'
-tags: ['react', 'javascript']
 
 image: 'antoine-barres-jay5BqVyf5A-unsplash.jpg'
 imageAltText: 'payphone in a red booth'
@@ -109,6 +110,9 @@ To fix this, we need to give Angular a little help by telling it to
 kick off a digest. The way we do that is by wrapping the service
 before we hand it to React.
 
+We make a new service called `reactCounterService`, and its job is
+to call through to the `counterService` and trigger a digest cycle.
+
 ```javascript
 exampleModule.factory(
   'reactCounterService',
@@ -207,13 +211,14 @@ One thing you'll also notice is that the component definition got a
 lot more verbose just by adding that single provider. In a larger
 app, there will likely be several global providers for things like
 routing, internationalization, toast notifications, and caching. The
-next post "Migration to React Series: Multiple React Roots" deals
-with how to make defining these React root components really simple.
+next post
+[Multiple React Roots in AngularJS](/posts/multiple-react-roots-in-angularjs)
+deals with how to make defining these React root components simple.
 
 ## In Summary
 
-- AngularJS only updates the DOM when there is a digest cycle
+- AngularJS only updates the DOM when there is a digest cycle.
 - Calling AngularJS services from React typically requires manually
-  running the digest cycle with `$rootScope.$apply()`
+  running the digest cycle with `$rootScope.$apply()`.
 - Wrapping the global service in a React context will allow it to be
-  called at any level of the component tree
+  called at any level of the component tree.

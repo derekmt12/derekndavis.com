@@ -1,12 +1,13 @@
 ---
 title: 'Rendering React in AngularJS'
-subtitle: 'Using react2angular to convert your first AngularJS component to React'
+subtitle:
+  'Using react2angular to convert your first AngularJS component to
+  React'
 seriesName: 'Migration to React Series'
 seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 2
 date: '2020-01-01'
-tags: ['react', 'javascript']
 
 image: 'fred-moon-fk50kc-DzSg-unsplash.jpg'
 imageAltText: 'The Shard in London rising above the skyline'
@@ -55,4 +56,4 @@ at the Angular templates.
 - Rendering React in AngularJS is straight forward with
   `react2angular`
 - Prefix `react2angular` component names with "react" to help your
-  team remember what has been converted
+  team easily tell what has been converted

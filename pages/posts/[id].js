@@ -15,6 +15,7 @@ export default function Post({ postData, series }) {
       description={postData.subtitle}
       postDate={postData.date}
       urlPath={postData.urlPath}
+      image={postData.image}
       type="article"
     >
       <article className="max-width mx-auto p-5 sm:p-0 text-gray-700">

@@ -73,3 +73,7 @@ pre[class*="language-"] {
   list-style: disc;
   list-style-position: inside;
 }
+
+.post-image-container > div {
+  height: 100%;
+}

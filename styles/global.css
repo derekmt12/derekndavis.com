@@ -27,7 +27,11 @@ a:hover {
 }
 
 /* bump the code size down a bit */
-pre[class*="language-"] {
+.prose pre[class*="language-"] {
+  font-size: 0.8em !important;
+}
+
+.sm\:prose-lg pre[class*="language-"] {
   font-size: 0.9em !important;
 }
 
@@ -57,10 +61,10 @@ pre[class*="language-"] {
 }
 
 /* Tailwind Overrides */
-.prose-sm h1,
-.prose-sm h2,
-.prose-sm h3,
-.prose-sm h4,
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
 .sm\:prose-lg h1,
 .sm\:prose-lg h2,
 .sm\:prose-lg h3,
@@ -68,7 +72,7 @@ pre[class*="language-"] {
   color: black;
 }
 
-.prose-sm ul,
+.prose ul,
 .sm\:prose-lg ul {
   list-style: disc;
   list-style-position: inside;

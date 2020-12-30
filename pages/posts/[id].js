@@ -20,7 +20,7 @@ export default function Post({ postData, series }) {
     >
       <article className="max-width mx-auto p-5 sm:p-0 text-gray-700">
         <header className="">
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-3xl sm:text-4xl font-bold">
             {postData.seriesName && (
               <div className="text-xl sm:text-2xl font-bold text-gray-500">
                 {postData.seriesName}
@@ -78,7 +78,7 @@ export default function Post({ postData, series }) {
           {series && <SeriesList className="mt-8" {...{ postData, series }} />}
         </header>
         <section
-          className="prose-sm sm:prose-lg mt-8"
+          className="prose sm:prose-lg mt-8"
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
         {series && <SeriesNextUp className="mt-8" {...{ postData, series }} />}

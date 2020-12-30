@@ -28,6 +28,7 @@ export default function Post({ postData, series }) {
             )}
             <div className="-mt-1 leading-10 text-black">{postData.title}</div>
           </h1>
+          <p className="text-gray-700 text-lg">{postData.subtitle}</p>
           <div className="text-gray-600 mb-2">
             <Date dateString={postData.date} />
           </div>

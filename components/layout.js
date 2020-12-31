@@ -112,15 +112,13 @@ export default function Layout({
               <a href="https://www.twitter.com/derekmt12" target="_blank">
                 <FontAwesomeIcon
                   icon={faTwitter}
-                  className="inline-block text-gray-100 mr-3"
-                  style={{ width: '32px', height: '32px' }}
+                  className="inline-block text-gray-100 mr-3 w-8 h-8"
                 />
               </a>
               <a href="https://www.linkedin.com/in/derekmt12" target="_blank">
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="inline-block text-gray-100"
-                  style={{ width: '32px', height: '32px' }}
+                  className="inline-block text-gray-100 w-8 h-8"
                 />
               </a>
             </div>

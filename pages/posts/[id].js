@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import classNames from 'classnames';
+import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCircle as faCircleRegular } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -81,6 +82,29 @@ export default function Post({ postData, series }) {
           className="prose sm:prose-lg mt-8"
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
+        <div className="my-8">
+          <a
+            href={`https://twitter.com/search?q=https://derekndavis.com${postData.urlPath}`}
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              className="inline-block text-blue-400 mr-3 w-6 h-6"
+            />
+            Discuss on Twitter
+          </a>{' '}
+          <span className="inline-block mx-2 text-gray-500">|</span>
+          <a
+            href={`https://github.com/derekmt12/derekndavis.com/blob/master${postData.urlPath}.md`}
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="inline-block text-gray-600 mr-3 w-6 h-6"
+            />
+            Edit on Github
+          </a>
+        </div>
         {series && <SeriesNextUp className="mt-8" {...{ postData, series }} />}
       </article>
     </Layout>

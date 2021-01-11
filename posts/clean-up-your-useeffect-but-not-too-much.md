@@ -20,7 +20,7 @@ its smallest form is really satisfying. Although, at a certain
 point, conciseness and maintainability are tugging on opposite ends
 of the same strand.
 
-Where this has particular bitten me is with the cleanup function of
+Where this has particularly bitten me is with the cleanup function of
 a `useEffect`.
 
 ## The Scenario

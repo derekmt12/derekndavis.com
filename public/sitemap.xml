@@ -12,6 +12,12 @@
 
   <url>
     <loc
+      >https://derekndavis.com/posts/clean-up-your-useeffect-but-not-too-much</loc
+    >
+  </url>
+
+  <url>
+    <loc
       >https://derekndavis.com/posts/dont-sacrifice-your-declarative-api-react-pattern-conditional-hooks</loc
     >
   </url>

@@ -6,6 +6,12 @@
 
   <url>
     <loc
+      >https://derekndavis.com/posts/3-steps-to-frictionless-tdd-with-jest-and-vscode</loc
+    >
+  </url>
+
+  <url>
+    <loc
       >https://derekndavis.com/posts/calling-angularjs-services-from-react</loc
     >
   </url>

@@ -3,21 +3,23 @@ import Image from 'next/image';
 
 import Layout from '../components/layout';
 import Date from '../components/date';
+import Subscribe from '../components/subscribe';
 import { getSortedPostsData } from '../lib/posts';
 
 export default function Home({ posts }) {
   return (
     <Layout home description="Software Engineer in Nashville, TN">
-      <SiteIntro />
-      <BlogList posts={posts} />
+      <SiteIntro className="mt-24" />
+      <Subscribe className="mt-12" />
+      <BlogList className="mt-12" posts={posts} />
     </Layout>
   );
 }
 
-function SiteIntro() {
+function SiteIntro({ className }) {
   return (
-    <section>
-      <div className="mx-auto max-width px-4 sm:px-0 pt-24 pb-8">
+    <section className={className}>
+      <div className="mx-auto max-width px-4 sm:px-0">
         <h1 className="text-2xl sm:text-4xl font-extrabold">Hi, I'm Derek.</h1>
         <p className="mt-3 sm:text-lg text-gray-600">
           I'm a senior software engineer at UL in Nashville, TN. I love all
@@ -33,10 +35,10 @@ function SiteIntro() {
   );
 }
 
-function BlogList({ posts }) {
+function BlogList({ posts, className }) {
   return (
-    <section>
-      <div className="mx-auto max-width px-4 sm:px-0">
+    <section className={className}>
+      <div className="mx-auto max-width px-4 sm:px-1">
         <h2 className="text-xl uppercase font-bold my-3">Posts</h2>
         <hr className="mb-8" />
         <ul>

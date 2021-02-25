@@ -4,6 +4,7 @@ import Image from 'next/image';
 import classNames from 'classnames';
 import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Subscribe from './subscribe';
 
 const SITE_URL = 'https://www.derekndavis.com';
 
@@ -131,6 +132,7 @@ export default function Layout({
           <Link href="/">
             <a>← Back to home</a>
           </Link>
+          <Subscribe className="my-12" />
         </div>
       )}
     </div>

@@ -16,6 +16,7 @@ export default async function subscribe(req, res) {
       {
         method: 'POST',
         body: JSON.stringify({
+          // TODO: how do I send the first name in the request???
           email_address: email,
           // the status of 'subscribed' is equivalent to a double opt-in.
           status: 'subscribed',

@@ -15,7 +15,7 @@ export default function Subscribe({ className }) {
     e.preventDefault();
 
     const res = await fetch('/api/subscribe', {
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ firstName, email }),
       headers: {
         'Content-Type': 'application/json',
       },

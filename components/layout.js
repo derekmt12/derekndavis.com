@@ -5,7 +5,9 @@ import classNames from 'classnames';
 import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const SITE_URL = 'https://www.derekndavis.com';
+import { track } from '../lib/analytics';
+
+const SITE_URL = 'https://derekndavis.com';
 
 export default function Layout({
   children,
@@ -20,6 +22,7 @@ export default function Layout({
   const defaultTitle = 'Derek N. Davis';
   const siteTitle = title ? `${title} - ${defaultTitle}` : defaultTitle;
   const imageUrl = `${SITE_URL}/images/${image}`;
+
   return (
     <div>
       <Head>
@@ -109,13 +112,21 @@ export default function Layout({
               className="absolute right-0 pr-2 sm:p-0"
               style={{ bottom: home ? '30px' : '52px' }}
             >
-              <a href="https://www.twitter.com/derekmt12" target="_blank">
+              <a
+                href="https://www.twitter.com/derekmt12"
+                target="_blank"
+                onClick={track.twitterProfile}
+              >
                 <FontAwesomeIcon
                   icon={faTwitter}
                   className="inline-block text-gray-100 mr-3 w-8 h-8"
                 />
               </a>
-              <a href="https://www.linkedin.com/in/derekmt12" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/derekmt12"
+                target="_blank"
+                onClick={track.linkedInProfile}
+              >
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   className="inline-block text-gray-100 w-8 h-8"

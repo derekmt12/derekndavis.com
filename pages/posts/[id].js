@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Layout from '../../components/layout';
 import Date from '../../components/date';
 import { getAllPostIds, getPostData, getSeries } from '../../lib/posts';
+import { track } from '../../lib/analytics';
 
 export default function Post({ postData, series }) {
   return (
@@ -86,6 +87,7 @@ export default function Post({ postData, series }) {
           <a
             href={`https://twitter.com/search?q=https://derekndavis.com${postData.urlPath}`}
             target="_blank"
+            onClick={track.discussOnTwitter}
           >
             <FontAwesomeIcon
               icon={faTwitter}

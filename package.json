@@ -14,6 +14,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
+    "@splitbee/web": "^0.2.4",
     "@tailwindcss/typography": "^0.2.0",
     "classnames": "^2.2.6",
     "date-fns": "^2.16.1",

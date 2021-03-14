@@ -1,5 +1,5 @@
 ---
-title: 'Cheat Code for a Lightning Fast Front End - Building an Optimistic UI'
+title: 'Cheat Code for a Lightning Fast Front End: Building an Optimistic UI'
 subtitle: 'How we can leverage the optimistic UI pattern for maximum performance in our app'
 date: '2021-02-12'
 
@@ -8,8 +8,7 @@ imageAltText: 'lightning storm over Twin Peaks in San Francisco'
 imageWidth: 2400
 imageHeight: 1600
 photographer: 'Emil Jarfelt'
-photographerLink: 'https://unsplash.com/@emiljarfelt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
-unsplashLink: 'https://unsplash.com/s/photos/lightning?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+photographerLink: 'https://unsplash.com/@emiljarfelt'
 
 urlPath: '/posts/lightning-fast-front-end-build-optimistic-ui'
 ---

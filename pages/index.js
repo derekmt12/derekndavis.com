@@ -95,7 +95,7 @@ function Posts({ posts }) {
 
 function Post({ id, date, title, subtitle, image, imageAltText }) {
   return (
-    <li className="mb-5 rounded shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1">
+    <li className="mb-5 rounded shadow-md bg-white transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105 hover:-translate-y-1">
       <Link href={`/posts/${id}`}>
         <a className="hover:no-underline">
           <div className="sm:flex">

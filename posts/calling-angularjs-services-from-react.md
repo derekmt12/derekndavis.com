@@ -14,8 +14,7 @@ imageAltText: 'payphone in a red booth'
 imageWidth: 2400
 imageHeight: 1350
 photographer: 'Antoine Barrès'
-photographerLink: 'https://unsplash.com/@antoinebarres?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
-unsplashLink: 'https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+photographerLink: 'https://unsplash.com/@antoinebarres'
 
 urlPath: '/posts/calling-angularjs-services-from-react'
 ---

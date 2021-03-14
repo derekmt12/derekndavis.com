@@ -12,8 +12,7 @@ imageAltText: 'laptop computer with code'
 imageWidth: 2400
 imageHeight: 1600
 photographer: 'Arnold Francisca'
-photographerLink: 'https://unsplash.com/@clark_fransa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
-unsplashLink: 'https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+photographerLink: 'https://unsplash.com/@clark_fransa'
 
 urlPath: '/posts/migration-to-react-introduction'
 ---

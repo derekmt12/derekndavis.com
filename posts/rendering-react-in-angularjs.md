@@ -14,8 +14,7 @@ imageAltText: 'The Shard in London rising above the skyline'
 imageWidth: 2400
 imageHeight: 1350
 photographer: 'Fred Moon'
-photographerLink: 'https://unsplash.com/@fwed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
-unsplashLink: 'https://unsplash.com/s/photos/london-skyline?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+photographerLink: 'https://unsplash.com/@fwed'
 
 urlPath: '/posts/rendering-react-in-angularjs'
 ---

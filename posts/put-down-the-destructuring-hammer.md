@@ -8,8 +8,7 @@ imageAltText: 'camera parts'
 imageWidth: 2400
 imageHeight: 1600
 photographer: 'Shane Aldendorff'
-photographerLink: 'https://unsplash.com/@pluyar?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
-unsplashLink: 'https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+photographerLink: 'https://unsplash.com/@pluyar'
 
 urlPath: '/posts/put-down-the-destructuring-hammer'
 ---

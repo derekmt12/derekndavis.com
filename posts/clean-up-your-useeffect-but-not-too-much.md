@@ -8,8 +8,7 @@ imageAltText: 'lit up MacBook Pro keyboard'
 imageWidth: 2400
 imageHeight: 1600
 photographer: 'Nhu Nguyen'
-photographerLink: 'https://unsplash.com/@nguyendqnhu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
-unsplashLink: 'https://unsplash.com/s/photos/keyboard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+photographerLink: 'https://unsplash.com/@nguyendqnhu'
 
 urlPath: '/posts/clean-up-your-useeffect-but-not-too-much'
 ---

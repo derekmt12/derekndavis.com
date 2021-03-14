@@ -8,8 +8,7 @@ imageAltText: 'lab testing'
 imageWidth: 2400
 imageHeight: 1600
 photographer: 'Louis Reed'
-photographerLink: 'https://unsplash.com/@_louisreed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
-unsplashLink: 'https://unsplash.com/s/photos/lab?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+photographerLink: 'https://unsplash.com/@_louisreed'
 
 urlPath: '/posts/3-steps-to-frictionless-tdd-with-jest-and-vscode'
 ---

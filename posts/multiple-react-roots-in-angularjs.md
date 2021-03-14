@@ -14,8 +14,7 @@ imageAltText: 'tree roots in front of a waterfall'
 imageWidth: 2400
 imageHeight: 1600
 photographer: 'Zach Reiner'
-photographerLink: 'https://unsplash.com/@_zachreiner_?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
-unsplashLink: 'https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+photographerLink: 'https://unsplash.com/@_zachreiner_'
 
 urlPath: '/posts/multiple-react-roots-in-angularjs'
 ---

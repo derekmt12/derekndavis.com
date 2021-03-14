@@ -64,14 +64,6 @@ export default function Post({ postData, series }) {
                     target="_blank"
                   >
                     {postData.photographer}
-                  </a>{' '}
-                  on{' '}
-                  <a
-                    className="text-gray-800 underline"
-                    href={postData.unsplashLink}
-                    target="_blank"
-                  >
-                    Unsplash
                   </a>
                 </div>
               )}

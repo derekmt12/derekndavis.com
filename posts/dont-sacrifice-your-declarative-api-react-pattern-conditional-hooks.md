@@ -1,6 +1,6 @@
 ---
 title:
-  "Don't Sacrifice Your Declarative API for One Use Case - A React
+  "Don't Sacrifice Your Declarative API for One Use Case: A React
   Pattern for Conditional Hooks"
 subtitle:
   'Designing React components that support declarative and
@@ -12,8 +12,7 @@ imageAltText: 'aerial view on weaving concrete roads'
 imageWidth: 2400
 imageHeight: 1799
 photographer: 'Abraham Barrera'
-photographerLink: 'https://unsplash.com/@abebarrera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
-unsplashLink: 'https://unsplash.com/s/photos/interstate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+photographerLink: 'https://unsplash.com/@abebarrera'
 
 urlPath: '/posts/dont-sacrifice-your-declarative-api-react-pattern-conditional-hooks'
 ---

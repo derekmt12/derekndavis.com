@@ -129,7 +129,7 @@ text of: Name
 
 ## The Function Approach
 
-One way we can fix this is by having a `getForm()` function
+One way we can fix this is by having a `getForm()` function.
 
 ```javascript
 function renderPersonScreen() {
@@ -148,6 +148,8 @@ function renderPersonScreen() {
   };
 }
 ```
+
+We call it every time we want to access the form controls.
 
 ```javascript{8,17}
 it('should close the form after add', () => {

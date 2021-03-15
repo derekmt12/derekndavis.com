@@ -2,6 +2,7 @@
 title: 'Cheat Code for a Lightning Fast Front End: Building an Optimistic UI'
 subtitle: 'How we can leverage the optimistic UI pattern for maximum performance in our app'
 date: '2021-02-12'
+tags: ['javascript', 'reactjs', 'angular', 'vuejs']
 
 image: 'emil-jarfelt-NROJUYgpjKE-unsplash.jpg'
 imageAltText: 'lightning storm over Twin Peaks in San Francisco'

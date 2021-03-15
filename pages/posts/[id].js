@@ -4,6 +4,15 @@ import classNames from 'classnames';
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCircle as faCircleRegular } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { formatUrl } from 'url-lib';
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  TwitterShareButton,
+  TwitterIcon,
+} from 'react-share';
 
 import Layout from '../../components/layout';
 import Date from '../../components/date';
@@ -11,6 +20,11 @@ import { getAllPostIds, getPostData, getSeries } from '../../lib/posts';
 import { track } from '../../lib/analytics';
 
 export default function Post({ postData, series }) {
+  const shareUrl = formatUrl(`https://derekndavis.com/${postData.urlPath}`, {
+    utm_medium: 'social',
+    utm_campaign: 'share',
+  });
+
   return (
     <Layout
       title={postData.title}
@@ -75,6 +89,38 @@ export default function Post({ postData, series }) {
           className="prose sm:prose-lg mt-8"
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
+        <div className="flex mt-8">
+          <TwitterShareButton
+            url={formatUrl(shareUrl, { utm_source: 'twitter' })}
+            title={`${postData.title} - ${postData.subtitle}`}
+            via="DerekMT12"
+            hashtags={postData.tags || []}
+            aria-label="Share on Twitter"
+            onShareWindowClose={track.share.twitter}
+            className="mr-2"
+          >
+            <TwitterIcon round size={48} />
+          </TwitterShareButton>
+          <FacebookShareButton
+            url={formatUrl(shareUrl, { utm_source: 'facebook' })}
+            title={`${postData.title} - ${postData.subtitle}`}
+            aria-label="Share on Facebook"
+            onShareWindowClose={track.share.facebook}
+            className="mr-2"
+          >
+            <FacebookIcon round size={48} />
+          </FacebookShareButton>
+          <LinkedinShareButton
+            url={formatUrl(shareUrl, { utm_source: 'linkedin' })}
+            title={postData.title}
+            summary={postData.subtitle}
+            source="https://derekndavis.com"
+            aria-label="Share on LinkedIn"
+            onShareWindowClose={track.share.linkedIn}
+          >
+            <LinkedinIcon round size={48} />
+          </LinkedinShareButton>
+        </div>
         <div className="my-8">
           <a
             href={`https://twitter.com/search?q=https://derekndavis.com${postData.urlPath}`}

@@ -2,6 +2,7 @@
 title: 'Clean Up Your useEffect, But Not Too Much'
 subtitle: 'The pitfalls of an implied cleanup function'
 date: '2021-01-11'
+tags: ['javascript', 'reactjs']
 
 image: 'nhu-nguyen-IL1qSqEMNBo-unsplash.jpg'
 imageAltText: 'lit up MacBook Pro keyboard'

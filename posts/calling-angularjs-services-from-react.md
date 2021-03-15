@@ -8,6 +8,7 @@ seriesSubtitle: 'Convert your AngularJS app to React'
 seriesId: 'migration-to-react'
 sequence: 3
 date: '2020-12-24'
+tags: ['reactjs', 'angularjs']
 
 image: 'antoine-barres-jay5BqVyf5A-unsplash.jpg'
 imageAltText: 'payphone in a red booth'

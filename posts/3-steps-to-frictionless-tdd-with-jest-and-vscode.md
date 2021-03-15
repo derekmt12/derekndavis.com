@@ -2,6 +2,7 @@
 title: '3 Steps to Frictionless TDD with Jest and VS Code'
 subtitle: 'A simple workflow to make testing less painful'
 date: '2021-02-24'
+tags: ['javascript', 'tdd', 'vscode']
 
 image: 'louis-reed-pwcKF7L4-no-unsplash.jpg'
 imageAltText: 'lab testing'

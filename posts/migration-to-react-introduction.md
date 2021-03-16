@@ -1,5 +1,5 @@
 ---
-title: 'Migration to React - Introduction'
+title: 'Migration to React: Introduction'
 subtitle: 'How to incrementally convert your AngularJS app to React'
 seriesName: 'Migration to React Series'
 seriesSubtitle: 'Convert your AngularJS app to React'
@@ -21,8 +21,8 @@ urlPath: '/posts/migration-to-react-introduction'
 With a date set for the
 [end of AngularJS long-term support](https://blog.angular.io/stable-angularjs-and-long-term-support-7e077635ee9c),
 it's been a wake up call for a lot companies still maintaining an
-AngularJS app. My team and I have been working on converting our
-large AngularJS app to React, and we've learned a ton along the way.
+[AngularJS](https://angularjs.org/) app. My team and I have been working on converting our
+large AngularJS app to [React](https://reactjs.org/), and we've learned a ton along the way.
 Migrating to a JavaScript framework like React can seem like a
 daunting task, but it can be done, and I want to show you how we're
 tackling it to help you do the same.
@@ -135,9 +135,9 @@ be moved into a single React component that handles all routes under
 ## Preparing the Codebase
 
 The first thing that needs to be done to begin migrating from
-AngularJS to React is to update your front end build to use Babel
-and Webpack (or some other modern bundler). When we were starting to
-talk about our migration to React, we were still using Gulp, so our
+AngularJS to React is to update your front end build to use [Babel](https://babeljs.io/)
+and [Webpack](https://webpack.js.org/) (or some other modern bundler). When we were starting to
+talk about our migration to React, we were still using [Gulp](https://gulpjs.com/), so our
 first step was to migrate our repositories to Webpack, one at a
 time.
 
@@ -153,11 +153,9 @@ React setup.
 ### Supporting JSX
 
 To be able to handle JSX and all the JavaScript features typically
-used with a React app, I recommend the `babel-preset-react-app`
-package. It's what Create React App uses, so it's the easiest way to
+used with a React app, I recommend the [`babel-preset-react-app`](https://www.npmjs.com/package/babel-preset-react-app)
+package. It's what [Create React App](https://create-react-app.dev/) uses, so it's the easiest way to
 get all the syntax support you need for React development.
-
-[https://www.npmjs.com/package/babel-preset-react-app](https://www.npmjs.com/package/babel-preset-react-app)
 
 Just add the preset to your Babel config, and you're on your way.
 
@@ -171,11 +169,11 @@ Just add the preset to your Babel config, and you're on your way.
 
 Depending on where your React code will be, the test runner may not
 be a problem at all. If the React code is in its own repository,
-that makes it easy; just configure Jest in your new repository. But
+that makes it easy; just configure [Jest](https://jestjs.io/) in your new repository. But
 if it's side-by-side with AngularJS, there's a little bit of work to
 do.
 
-One way to handle having Jest (for React) and Karma (for AngularJS)
+One way to handle having Jest (for React) and [Karma](https://karma-runner.github.io/latest/index.html) (for AngularJS)
 in the same repository is to have separate suffixes on the files.
 For example, if you're currently using `.spec.js` for your AngularJS
 tests, you could use `.test.js` for React. You'll just have to make

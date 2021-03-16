@@ -20,8 +20,8 @@ photographerLink: 'https://unsplash.com/@fwed'
 urlPath: '/posts/rendering-react-in-angularjs'
 ---
 
-When migrating an AngularJS app to React we need a way to use React
-components in an AngularJS template. That’s where `react2angular`
+When migrating an [AngularJS](https://angularjs.org/) app to [React](https://reactjs.org/) we need a way to use React
+components in an AngularJS template. That’s where [`react2angular`](https://www.npmjs.com/package/react2angular)
 comes in. While the name sounds like the opposite of what we’re
 trying to accomplish, its purpose is to help bring React into an
 Angular app.

@@ -21,7 +21,7 @@ urlPath: '/posts/multiple-react-roots-in-angularjs'
 ---
 
 One of the biggest challenges with incrementally migrating an app to
-React is how to manage multiple React “root” components. In a brand
+[React](https://reactjs.org/) is how to manage multiple React “root” components. In a brand
 new React app, this isn’t a concern, since there’s a single
 top-level component. If there are any global providers, they're
 always at the top.

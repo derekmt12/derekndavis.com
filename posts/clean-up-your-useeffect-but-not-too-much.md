@@ -21,7 +21,7 @@ point, conciseness and maintainability are tugging on opposite ends
 of the same strand.
 
 Where this has particularly bitten me is with the cleanup function of
-a `useEffect`.
+a [`useEffect`](https://reactjs.org/docs/hooks-reference.html#useeffect).
 
 ## The Scenario
 

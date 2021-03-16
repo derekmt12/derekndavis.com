@@ -14,7 +14,7 @@ photographerLink: 'https://unsplash.com/@_louisreed'
 urlPath: '/posts/3-steps-to-frictionless-tdd-with-jest-and-vscode'
 ---
 
-If you're looking to make writing your Jest tests easier in VS Code, look no further. In my quest to optimize my testing, I've tried several approaches, but I always come back to this workflow.
+If you're looking to make writing your [Jest](https://jestjs.io/) tests easier in [VS Code](https://code.visualstudio.com/), look no further. In my quest to optimize my testing, I've tried several approaches, but I always come back to this workflow.
 
 ## 1. Configure VS Code
 

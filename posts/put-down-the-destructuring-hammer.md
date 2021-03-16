@@ -14,7 +14,7 @@ photographerLink: 'https://unsplash.com/@pluyar'
 urlPath: '/posts/put-down-the-destructuring-hammer'
 ---
 
-Destructuring is one of JavaScript's most handy features. Once I wrapped my head around the odd-looking syntax, I was a big fan of what it can do. I mean, what's not to love? If we want to destructure a property, we can do it.
+[Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) is one of JavaScript's most handy features. Once I wrapped my head around the odd-looking syntax, I was a big fan of what it can do. I mean, what's not to love? If we want to destructure a property, we can do it.
 
 Objects? We can destructure that.
 
@@ -107,7 +107,7 @@ Let's look at another example.
 
 ## The Lure of Shorthand Property Names
 
-Shorthand property names are one of my favorite features in JavaScript. I love how clean the syntax looks.
+[Shorthand property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#new_notations_in_ecmascript_2015) are one of my favorite features in JavaScript. I love how clean the syntax looks.
 
 ```javascript
 // old school

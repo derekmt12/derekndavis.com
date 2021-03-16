@@ -17,7 +17,7 @@ photographerLink: 'https://unsplash.com/@abebarrera'
 urlPath: '/posts/dont-sacrifice-your-declarative-api-react-pattern-conditional-hooks'
 ---
 
-Imagine this. You're designing a React component, and it's going
+Imagine this. You're designing a [React](https://reactjs.org/) component, and it's going
 great. You've been able to elegantly handle all the use cases you
 need in a declarative way. But then... You think of a new scenario
 that doesn't fit into your design, and a wrench gets thrown into
@@ -258,8 +258,8 @@ function PersonGrid() {
 
 ## The Rules of Hooks
 
-Now before you bring out your pitchforks and say "you can't
-optionally call hooks!", hear me out. Think of why that is a rule in
+Now before you bring out your pitchforks and say ["you can't
+optionally call hooks!"](https://reactjs.org/docs/hooks-rules.html), hear me out. Think of why that is a rule in
 the first place. Hooks must be always called in the same order so
 the state doesn't get out of sync. So what that means is that a hook
 must _always_ be called or it can _never_ be called.

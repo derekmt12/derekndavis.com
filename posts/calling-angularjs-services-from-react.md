@@ -20,8 +20,8 @@ photographerLink: 'https://unsplash.com/@antoinebarres'
 urlPath: '/posts/calling-angularjs-services-from-react'
 ---
 
-First off, why would you want to call an AngularJS service from
-React? It is likely there are global services that haven’t been
+First off, why would you want to call an [AngularJS](https://angularjs.org/) service from
+[React](https://reactjs.org/)? It is likely there are global services that haven’t been
 converted to React yet that still need to be used. It’s a lot easier
 and less error-prone to use the Angular service directly rather than
 attempting to synchronize state with a copy of the same service in

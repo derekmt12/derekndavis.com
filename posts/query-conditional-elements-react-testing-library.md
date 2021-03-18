@@ -75,7 +75,7 @@ describe('PersonScreen', () => {
 });
 ```
 
-This way all of the element querying is done in one centralized location, the tests are [isolated](https://kentcdodds.com/blog/test-isolation-with-react), and they're easier to read.
+This way all of the element querying is done in one centralized location, the tests are isolated, and they're easier to read.
 
 But sometimes we can run into a problem with this approach.
 
@@ -181,7 +181,7 @@ We can do better.
 
 ## Property Getters
 
-Let's make a few tweaks to the render function. Instead of `getForm()`, we have a `form` property with `name` and `add` [property getters]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get).
+Let's make a few tweaks to the render function. Instead of `getForm()`, we have a `form` property with `name` and `add` [property getters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get).
 
 ```javascript
 function renderPersonScreen() {

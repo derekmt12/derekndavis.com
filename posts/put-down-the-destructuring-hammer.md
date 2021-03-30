@@ -3,6 +3,7 @@ title: 'Put Down the Destructuring Hammer'
 subtitle: 'A practical guide to using destructuring when it makes sense'
 date: '2021-02-18'
 tags: ['javascript', 'reactjs', 'angular', 'vuejs']
+featured: 1
 
 image: 'shane-aldendorff-3AzL-IR3v7Y-unsplash.jpg'
 imageAltText: 'camera parts'

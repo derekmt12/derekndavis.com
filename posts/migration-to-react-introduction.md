@@ -7,6 +7,7 @@ seriesId: 'migration-to-react'
 sequence: 1
 date: '2020-12-24'
 tags: ['reactjs', 'angularjs']
+featured: 3
 
 image: 'arnold-francisca-nPhl2x4fk2s-unsplash.jpg'
 imageAltText: 'laptop computer with code'

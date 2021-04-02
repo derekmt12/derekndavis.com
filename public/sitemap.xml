@@ -35,6 +35,12 @@
   </url>
 
   <url>
+    <loc
+      >https://derekndavis.com/posts/maintainable-testing-react-testing-library</loc
+    >
+  </url>
+
+  <url>
     <loc>https://derekndavis.com/posts/migration-to-react-introduction</loc>
   </url>
 

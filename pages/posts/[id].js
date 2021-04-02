@@ -20,7 +20,7 @@ import { getAllPostIds, getPostData, getSeries } from '../../lib/posts';
 import { track } from '../../lib/analytics';
 
 export default function Post({ postData, series }) {
-  const shareUrl = formatUrl(`https://derekndavis.com/${postData.urlPath}`, {
+  const shareUrl = formatUrl(`https://derekndavis.com${postData.urlPath}`, {
     utm_medium: 'social',
     utm_campaign: 'share',
   });

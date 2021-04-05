@@ -6,7 +6,7 @@ subtitle:
   'Designing React components that support declarative and
   imperative APIs'
 date: '2020-12-29'
-featured: 2
+featured: 3
 
 image: 'abraham-barrera-8Nn49K7Snow-unsplash.jpg'
 imageAltText: 'aerial view on weaving concrete roads'

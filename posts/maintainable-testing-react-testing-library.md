@@ -3,6 +3,7 @@ title: 'Solving the Maintenance Nightmare with React Testing Library'
 subtitle: 'How test render functions help us write maintainable tests'
 date: '2021-04-02'
 tags: ['javascript', 'reactjs', 'unittesting']
+featured: 2
 
 image: 'neonbrand-60krlMMeWxU-unsplash.jpg'
 imageAltText: 'mechanic tools'

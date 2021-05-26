@@ -80,3 +80,15 @@ a:hover {
 .post-image-container > div {
   height: 100%;
 }
+
+.prose h2 code, .prose h3 code {
+  font-weight: 600;
+}
+
+.prose code {
+  color: #103b5d;
+  font-weight: normal;
+  background-color: #c7e0f3;
+  border-radius: 3px;
+  padding: 3px;
+}

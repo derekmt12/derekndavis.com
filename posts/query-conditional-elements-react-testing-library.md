@@ -120,9 +120,8 @@ function PersonScreen() {
 
 Since the form is no longer shown when the first [`getByLabelText`](https://testing-library.com/docs/queries/bylabeltext) runs, it's going to produce an error in the console:
 
-```
-TestingLibraryElementError: Unable to find a label with the
-text of: Name
+```wrapcontent
+TestingLibraryElementError: Unable to find a label with the text of: Name
 ```
 
 `queryByLabelText` would get rid of the error, but when we try to access `name`, it'll be null. What we need is a way to query the form elements _after_ they are shown while still keeping their queries centralized.

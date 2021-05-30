@@ -24,6 +24,12 @@
 
   <url>
     <loc
+      >https://derekndavis.com/posts/debugging-checklist-react-testing-library</loc
+    >
+  </url>
+
+  <url>
+    <loc
       >https://derekndavis.com/posts/dont-sacrifice-your-declarative-api-react-pattern-conditional-hooks</loc
     >
   </url>

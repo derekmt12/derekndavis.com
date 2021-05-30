@@ -270,7 +270,7 @@ conditionally provides the `instance` prop. They will either provide
 the `instance` prop, which means the defaulted `useGrid` won't be
 used, or they'll use the `source` prop, meaning the `useGrid` hook
 will always be called. This satisfies the rules of hooks, but you'll
-have to tell ESLint to look the other way.
+have to tell [ESLint](https://eslint.org/) to look the other way.
 
 ## Summary
 

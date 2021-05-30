@@ -92,3 +92,7 @@ a:hover {
   border-radius: 3px;
   padding: 3px;
 }
+
+pre.language-wrapcontent, code.language-wrapcontent {
+  white-space: pre-wrap !important;
+}

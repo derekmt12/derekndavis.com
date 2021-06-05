@@ -96,3 +96,20 @@ a:hover {
 pre.language-wrapcontent, code.language-wrapcontent {
   white-space: pre-wrap !important;
 }
+
+/* heading links */
+.heading-link {
+  color: rgb(156, 163, 175);
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+h2:hover .heading-link, h3:hover .heading-link {
+  opacity: 1;
+}
+.heading-link:after {
+  content: '#';
+}
+.prose h2 a, .prose h3 a {
+  text-decoration: none;
+}

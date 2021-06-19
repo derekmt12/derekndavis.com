@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import 'prism-material-themes/themes/material-palenight.css';
 
 import { useAnalytics } from '../lib/analytics';

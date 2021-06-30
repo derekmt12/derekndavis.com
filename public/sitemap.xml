@@ -67,4 +67,8 @@
   <url>
     <loc>https://derekndavis.com/posts/rendering-react-in-angularjs</loc>
   </url>
+
+  <url>
+    <loc>https://derekndavis.com/posts/testing-lists-react-testing-library</loc>
+  </url>
 </urlset>

@@ -41,6 +41,8 @@ export default function Layout({
         />
         <link rel="manifest" href="/site.webmanifest" />
 
+        <link rel="canonical" href={`${SITE_URL}${urlPath || ''}`} />
+
         <meta name="description" content={description} />
         {postDate && (
           <meta property="article:published_time" content={postDate} />

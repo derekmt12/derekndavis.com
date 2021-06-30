@@ -20,7 +20,7 @@ Today, I'm going to be your coworker. Let's fix those tests.
 
 ### Making this Process Quicker
 
-Before we get started, I would recommend taking a couple minutes (literally) to read  [3 Steps to Frictionless TDD with Jest and VS Code](https://derekndavis.com/posts/3-steps-to-frictionless-tdd-with-jest-and-vscode). It will make the debugging process go much smoother, and you'll be happy you did.
+Before we get started, I would recommend taking a couple minutes (literally) to read  [3 Steps to Frictionless TDD with Jest and VS Code](/posts/3-steps-to-frictionless-tdd-with-jest-and-vscode). It will make the debugging process go much smoother, and you'll be happy you did.
 
 And with that, let's begin.
 
@@ -146,7 +146,7 @@ expect(name).toBeNull();
 
 In the final assertion, name isn't re-queried. It's stale.
 
-For most test suites, I recommend the solution I discuss in my article on [targeting conditional elements](https://derekndavis.com/posts/query-conditional-elements-react-testing-library). But for a quick fix, you can also inline the queries:
+For most test suites, I recommend the solution I discuss in my article on [targeting conditional elements](/posts/query-conditional-elements-react-testing-library). But for a quick fix, you can also inline the queries:
 
 ```javascript
 // name should be there
@@ -221,7 +221,7 @@ beforeEach(() => {
 });
 ```
 
-But a better way is to use a [test render function](https://derekndavis.com/posts/maintainable-testing-react-testing-library):
+But a better way is to use a [test render function](/posts/maintainable-testing-react-testing-library):
 
 ```javascript
 function renderUser({ user }) {
@@ -246,7 +246,7 @@ This pattern completely removes the question of "did I forget to reset my variab
 
 It's also possible that your component is mutating global variables. Maybe there's data that is set in `localStorage`, `sessionStorage`, or (heaven forbid) on the `window` object during the run of one of your tests. If the next test is expecting to work with a clean copy of those storage mechanisms, that can cause a problem.
 
-Make sure you're resetting those variables in your [test render function](https://derekndavis.com/posts/maintainable-testing-react-testing-library) or `beforeEach`.
+Make sure you're resetting those variables in your [test render function](/posts/maintainable-testing-react-testing-library) or `beforeEach`.
 
 ## My `react-router` Params Are Undefined
 

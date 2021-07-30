@@ -65,6 +65,12 @@
   </url>
 
   <url>
+    <loc
+      >https://derekndavis.com/posts/react-context-soup-react-testing-library</loc
+    >
+  </url>
+
+  <url>
     <loc>https://derekndavis.com/posts/rendering-react-in-angularjs</loc>
   </url>
 

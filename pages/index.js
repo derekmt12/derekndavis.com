@@ -21,7 +21,7 @@ function SiteIntro({ className }) {
       <div className="mx-auto max-width px-4 sm:px-0">
         <h1 className="text-2xl sm:text-4xl font-extrabold">Hi, I'm Derek.</h1>
         <p className="mt-3 sm:text-lg text-gray-600">
-          I'm a senior software engineer at UL in Nashville, TN. I love all
+          I'm a software engineer at Microsoft based in Nashville, TN. I love all
           things JavaScript and have been developing for the web since 2012. I'm
           a lifelong learner and enjoy teaching programming topics in general.
         </p>

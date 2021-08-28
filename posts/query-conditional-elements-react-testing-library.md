@@ -231,8 +231,11 @@ That's more like it.
 
 <section style="color: rgba(43, 108, 176, 1); background-color: rgba(190, 227, 248, 1);" class="py-3 px-4 rounded">
   <h3 class="uppercase" style="margin-top: 0; font-size: 1em;">Note</h3>
+  <p style="font-size: 0.9em;">
+    One thing to note with this approach is that we can't <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructure</a> the properties when using getters. The act of destructuring will call the getters, and then we're back to the problem we had in the first place.
+  </p>
   <p style="margin-bottom: 0; font-size: 0.9em;">
-    One thing to note with this approach is that we can't <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructure</a> the properties when using getters. The act of destructuring will call the getters, and then we're back to the problem we had in the first place. We can fix it by grouping the conditional elements in an object like we did in the above examples or not destructuring at all (<a href="/posts/put-down-the-destructuring-hammer">and sometimes that's not such a bad thing</a>).
+    We can fix it by grouping the conditional elements in an object like we did in the above examples or not destructuring at all (<a href="/posts/put-down-the-destructuring-hammer">and sometimes that's not such a bad thing</a>).
   </p>
 </section>
 

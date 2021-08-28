@@ -198,7 +198,7 @@ it('should add a character', () => {
     getCharacters().find(
       (character) => character.name === pam
     )
-  ).not.toBeTruthy();
+  ).toBeFalsy();
 
   // add pam
   fireEvent.change(
@@ -239,7 +239,7 @@ it('should delete a character', () => {
     getCharacters().find(
       (character) => character.name === jim
     )
-  ).not.toBeTruthy();
+  ).toBeFalsy();
 });
 ```
 

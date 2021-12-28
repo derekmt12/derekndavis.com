@@ -77,8 +77,8 @@ a:hover {
   list-style-position: inside;
 }
 
-.post-image-container > div {
-  height: 100%;
+.post-image-container > span {
+  height: 100% !important;
 }
 
 .prose h2 code, .prose h3 code {

@@ -81,7 +81,7 @@ But sometimes we can run into a problem with this approach.
 
 ## Conditionally Rendered UI
 
-Let's change this component to so the user can hide and show the form with a toggle button.
+Let's change this component so the user can hide and show the form with a toggle button.
 
 ```javascript{3,8,12-16,29-30}
 function PersonScreen() {

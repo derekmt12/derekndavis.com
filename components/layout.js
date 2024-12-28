@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import classNames from 'classnames';
 import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -98,17 +98,15 @@ export default function Layout({
               }}
             >
               <Link href="/">
-                <a>
-                  <img
-                    src="/images/profile.png"
-                    className="rounded-full"
-                    style={{
-                      width: home ? '100px' : '70px',
-                      height: home ? '100px' : '70px',
-                    }}
-                    alt="Derek Davis"
-                  />
-                </a>
+                <img
+                  src="/images/profile.png"
+                  className="rounded-full"
+                  style={{
+                    width: home ? '100px' : '70px',
+                    height: home ? '100px' : '70px',
+                  }}
+                  alt="Derek Davis"
+                />
               </Link>
             </div>
             <div
@@ -142,9 +140,7 @@ export default function Layout({
       <main>{children}</main>
       {!home && (
         <div className="max-width mx-auto my-12 px-4 sm:px-0">
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+          <Link href="/">← Back to home</Link>
           <Subscribe className="my-12" />
         </div>
       )}

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import classNames from 'classnames';
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCircle as faCircleRegular } from '@fortawesome/free-regular-svg-icons';
@@ -172,8 +172,8 @@ function SeriesList({ className, postData, series }) {
                 className="inline-block mr-3 text-gray-400"
                 style={{ width: '16px', height: '16px' }}
               />
-              <Link href={p.urlPath}>
-                <a className="text-gray-900 underline">{p.title}</a>
+              <Link href={p.urlPath} className="text-gray-900 underline">
+                {p.title}
               </Link>
             </>
           )}
@@ -187,19 +187,17 @@ function SeriesNextUp({ className, postData, series }) {
   const nextArticle = series.posts.find((p) => p.sequence > postData.sequence);
 
   return nextArticle ? (
-    <Link href={nextArticle.urlPath}>
-      <a className="hover:no-underline">
-        <div
-          className={classNames(
-            'bg-white p-3 rounded shadow-md transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1',
-            className
-          )}
-        >
-          <h3 className="text-lg text-black">Next Up</h3>
-          <div>{nextArticle.title}</div>
-          <div className="text-gray-600">{nextArticle.subtitle}</div>
-        </div>
-      </a>
+    <Link href={nextArticle.urlPath} className="hover:no-underline">
+      <div
+        className={classNames(
+          'bg-white p-3 rounded shadow-md transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1',
+          className
+        )}
+      >
+        <h3 className="text-lg text-black">Next Up</h3>
+        <div>{nextArticle.title}</div>
+        <div className="text-gray-600">{nextArticle.subtitle}</div>
+      </div>
     </Link>
   ) : null;
 }
